@@ -144,3 +144,11 @@ details p { margin-top: .5rem; max-width: 30rem; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
 }
+
+.loading-preview {
+  background: linear-gradient(112deg, #182b21 30%, #294336 50%, #182b21 70%);
+  background-size: 220% 100%;
+  animation: preview-shimmer 1.4s linear infinite;
+}
+@keyframes preview-shimmer { to { background-position: -220% 0; } }
+@media (prefers-reduced-motion: reduce) { .loading-preview { animation: none; } }

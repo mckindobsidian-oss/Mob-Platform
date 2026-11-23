@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><rect width="512" height="512" rx="136" fill="#b5e68a"/><path d="M115 336V213c0-71 90-76 141 9 51-85 141-80 141-9v123" fill="none" stroke="#172a1c" stroke-width="54" stroke-linecap="round" stroke-linejoin="round"/><circle cx="256" cy="336" r="27" fill="#172a1c"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs><linearGradient id="tile" x2="1" y2="1" gradientUnits="objectBoundingBox"><stop stop-color="#ddf5ac"/><stop offset="1" stop-color="#93cf73"/></linearGradient></defs>
+  <rect x="8" y="8" width="240" height="240" rx="62" fill="#193b2c"/>
+  <rect x="14" y="14" width="228" height="228" rx="56" fill="url(#tile)"/>
+  <path d="M56 173v-75c0-5 4-9 9-9h13l48 42 48-42h14c5 0 9 4 9 9v75" fill="none" stroke="#173628" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M109 177h34" stroke="#2e684b" stroke-width="10" stroke-linecap="round"/>
+</svg>
