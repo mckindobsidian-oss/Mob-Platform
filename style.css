@@ -6,3 +6,6 @@
 .loading-preview{min-height:120px;background:linear-gradient(110deg,var(--panel) 30%,#2b4334 48%,var(--panel) 65%);background-size:220% 100%;animation:preview-shimmer 1.4s linear infinite}@keyframes preview-shimmer{to{background-position:-220% 0}}
 @media(max-width:760px){.wrap{width:calc(100% - 36px)}.site-header{min-height:70px}.site-header nav{gap:12px}.hero,.product,.download-layout,.features{grid-template-columns:1fr}.hero{padding-block:45px 24px;gap:29px}.hero h1{font-size:clamp(58px,13vw,90px)}.product{padding-block:53px;gap:24px}.coast img{height:150px}.features{gap:23px;padding-block:30px 54px}.downloads{padding-block:49px}.download-layout{gap:15px}.site-footer{flex-wrap:wrap}.site-footer nav{gap:12px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.loading-preview{animation:none}}
+
+::selection { background: #b4e6a3; color: #102017; }
+img { user-select: none; -webkit-user-drag: none; }

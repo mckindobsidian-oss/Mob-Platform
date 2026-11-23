@@ -1,6 +1,6 @@
 document.getElementById('year').textContent = new Date().getFullYear();
 
-const preview = document.querySelector('img[src="assets/workspace.png"]');
+const preview = document.getElementById("workspace-preview");
 if (preview && !preview.complete) {
   preview.classList.add("loading-preview");
   const finish = () => preview.classList.remove("loading-preview");

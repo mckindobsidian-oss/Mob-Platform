@@ -5,19 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101a15">
   <meta name="description" content="Use Mob to plan your tasks, focus with a Pomodoro timer, and set limits on distractions. Available on the web, Windows, Android, Chrome and Edge.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="og:image:alt" content="Mob’s glowing green ribbon mark">
   <meta property="og:title" content="Mob — Make time for what matters">
   <meta property="og:description" content="Tasks, focus timers and screen time in one workspace.">
   <meta property="og:url" content="https://moblabs.vercel.app/">
   <meta property="og:image" content="https://moblabs.vercel.app/assets/ribbon-hero.jpg">
   <link rel="canonical" href="https://moblabs.vercel.app/">
-  <link rel="icon" href="assets/mob-mark.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/mob-favicon.png" type="image/png" sizes="32x32">
   <link rel="stylesheet" href="style.css">
   <title>Mob — Make time for what matters</title>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header wrap">
-    <a class="brand" href="./" aria-label="Mob home"><img src="assets/mob-mark.svg" width="32" height="32" alt="">Mob</a>
+    <a class="brand" href="./" aria-label="Mob home"><img src="assets/mob-mark.webp" draggable="false" width="32" height="32" alt="">Mob</a>
     <nav aria-label="Main navigation">
       <a href="#downloads">Downloads</a>
       <a class="button nav-button app-link" href="https://usemob.netlify.app/">Open Mob <span aria-hidden="true">↗</span></a>
@@ -34,14 +37,14 @@
           <a class="text-link" href="#downloads">Get the apps</a>
         </div>
       </div>
-      <img class="hero-art" src="assets/ribbon-hero.jpg" width="1100" height="733" alt="Glossy green Mob ribbon mark against a dark background">
+      <img class="hero-art" draggable="false" fetchpriority="high" src="assets/ribbon-hero.jpg" width="1100" height="733" alt="Glossy green Mob ribbon mark against a dark background">
     </section>
 
     <section class="product wrap" aria-labelledby="product-heading">
       <div class="product-copy"><h2 id="product-heading">One workspace.<br>Fewer distractions.</h2><p>Pick a task, set your timer, and come back to a clear view of how you spent your time.</p></div>
-      <img src="assets/workspace.png" width="1200" height="820" alt="Mob Today workspace showing tasks, a focus timer, and achievements" loading="lazy">
+      <img id="workspace-preview" src="assets/workspace.webp" draggable="false" decoding="async" width="1200" height="820" alt="Mob Today workspace showing tasks, a focus timer, and achievements" loading="lazy">
     </section>
-    <div class="coast wrap"><img src="assets/shoreline.jpg" width="960" height="540" alt="Quiet waves from Mob’s Focus background" loading="lazy"><span>Focus mode</span></div>
+    <div class="coast wrap"><img src="assets/shoreline.jpg" draggable="false" decoding="async" width="960" height="540" alt="Quiet waves from Mob’s Focus background" loading="lazy"><span>Focus mode</span></div>
     <section class="features wrap" aria-label="What you can do with Mob">
       <article>
         <h2>Plan your day.</h2>
@@ -49,11 +52,11 @@
       </article>
       <article>
         <h2>Find your focus.</h2>
-        <p>Start a Pomodoro and choose a focus sound. Block distracting websites during your session with the browser extension.</p>
+        <p>Start a Pomodoro and play continuous focus audio for 25 or 60 minutes. Block distracting websites during your session with the browser extension.</p>
       </article>
       <article>
         <h2>See where time goes.</h2>
-        <p>Use Flow to see active app and website usage on Windows and the web, and set limits on distractions.</p>
+        <p>Flow records foreground Windows apps and active browser tabs when tracking is on. Use the dashboard to review that time and set limits.</p>
       </article>
     </section>
 
@@ -66,22 +69,22 @@
         <div class="download-list">
           <article class="download-row">
             <div class="download-item">
-              <div><h3>Windows</h3><p>x64 · v1.5.5</p></div>
-              <a class="button download-button" href="https://github.com/mckindobsidian-oss/Mob-Platform/releases/download/v1.5.5/Mob-Setup-v1.5.5.exe" aria-label="Download Mob for Windows" download>Download <span aria-hidden="true">↓</span></a>
+              <div><h3>Windows</h3><p>x64 · v1.5.6</p></div>
+              <a class="button download-button" href="https://github.com/mckindobsidian-oss/Mob-Platform/releases/download/v1.5.6/Mob-Setup-v1.5.6.exe" aria-label="Download Mob for Windows" download>Download <span aria-hidden="true">↓</span></a>
             </div>
             <details><summary>Installation help</summary><p>Quit Mob from the system tray before running the unsigned installer.</p></details>
           </article>
           <article class="download-row">
             <div class="download-item">
-              <div><h3>Android</h3><p>Android 8+ · v1.5.5</p></div>
-              <a class="button download-button" href="https://github.com/mckindobsidian-oss/Mob-Platform/releases/download/v1.5.5/Mob-Android-v1.5.5.apk" aria-label="Download Mob for Android" download>Download <span aria-hidden="true">↓</span></a>
+              <div><h3>Android</h3><p>Android 8+ · v1.5.6</p></div>
+              <a class="button download-button" href="https://github.com/mckindobsidian-oss/Mob-Platform/releases/download/v1.5.6/Mob-Android-v1.5.6.apk" aria-label="Download Mob for Android" download>Download <span aria-hidden="true">↓</span></a>
             </div>
             <details><summary>Installation help</summary><p>Open the debug-signed APK and allow installation from your download source if Android asks.</p></details>
           </article>
           <article class="download-row">
             <div class="download-item">
-              <div><h3>Browser extension</h3><p>Chrome and Edge · v1.6.7</p></div>
-              <a class="button download-button" href="https://github.com/mckindobsidian-oss/Mob-Platform/releases/download/v1.5.5/Mob-Browser-Extension-v1.6.7.zip" aria-label="Download the Mob browser extension" download>Download <span aria-hidden="true">↓</span></a>
+              <div><h3>Browser extension</h3><p>Chrome and Edge · v1.6.8</p></div>
+              <a class="button download-button" href="https://github.com/mckindobsidian-oss/Mob-Platform/releases/download/v1.5.6/Mob-Browser-Extension-v1.6.8.zip" aria-label="Download the Mob browser extension" download>Download <span aria-hidden="true">↓</span></a>
             </div>
             <details><summary>Installation help</summary><p>Extract the ZIP, open your browser’s Extensions page, enable Developer mode, and choose Load unpacked. Sign in to Mob and open Flow. Mob will ask you to enable browser activity.</p></details>
           </article>
@@ -91,7 +94,7 @@
   </main>
 
   <footer class="site-footer wrap">
-    <a class="brand" href="./" aria-label="Mob home"><img src="assets/mob-mark.svg" width="28" height="28" alt="">Mob</a>
+    <a class="brand" href="./" aria-label="Mob home"><img src="assets/mob-mark.webp" draggable="false" width="28" height="28" alt="">Mob</a>
     <nav aria-label="Legal"><a href="https://usemob.netlify.app/privacy.html">Privacy</a> <a href="https://usemob.netlify.app/terms.html">Terms of use</a> <a href="https://usemob.netlify.app/metiq-credits.html">Credits</a></nav>
     <small>© <span id="year">2026</span> Mob</small>
   </footer>
